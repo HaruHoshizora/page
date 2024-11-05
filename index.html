@@ -65,35 +65,31 @@
 
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 150px;
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Who is Haru Hoshizora (春星空)?</h1>
-        <p>Haru Hoshizora is a self-taught machine learning and AI engineer, demonstrating remarkable resilience and determination in his journey.<br>
-            Despite being a two-time college dropout, Haru has passionately pursued his interest in technology.<br>
-            His unwavering dedication to his laptop far surpasses any interest in his phone, reflecting his commitment to his craft and continuous learning.<br>
-            His first and last anime, Jujutsu Kaisen, left a lasting impression on him.</p>
+        <p>Haru Hoshizora is a self-taught machine learning and AI engineer and a two-time college dropout. His unwavering dedication to his laptop far surpasses any interest in his phone, reflecting his commitment to his craft and continuous learning.</p>
         <div class="spacer"></div>
-        
-        <h2>Haru's Learning</h2>
-        <ul>
-            <li><a href="https://github.com/HaruHoshizora/Scientific-Computing-with-Python-Beta-" target="_blank">Scientific Computing with Python (Beta)</a></li>
-        </ul>
 
-        <h2>Haru's Contact Links</h2>
+        <h2>Haru's Contact Links:</h2>
         <ul>
-            <li><a href="https://github.com/HaruHoshizora" target="_blank">github</a></li>
+            <li><a href="https://github.com/HaruHoshizora" target="_blank">Github</a></li>
             <li><a href="https://x.com/HaruHoshizora" target="_blank">X</a></li>
         </ul>
         
         <div class="spacer"></div>
 
         <footer>
-            <p>© copyright Haru Hoshizora (春星空) 2024</p>
+            <p>&copy; <span id="year"></span> Haru Hoshizora (春星空)</p>
         </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </div>
 </body>
 </html>
