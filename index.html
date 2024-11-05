@@ -10,15 +10,15 @@
         body {
             background-color: black;
             color: white;
-            font-family: 'Raleway', sans-serif; /* Ensure Raleway is applied */
+            font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 100vh;
-            font-size: 18px; /* Same font size */
-            line-height: 1.6; /* Same line height */
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .content {
@@ -31,8 +31,12 @@
             margin: 0;
         }
 
+        h1 {
+            font-size: 2.5em;
+        }
+
         h2 {
-            margin-top: 30px; /* Consistent margins */
+            margin-top: 30px;
             margin-bottom: 10px;
         }
 
@@ -45,7 +49,7 @@
         }
 
         a {
-            color: cyan; /* Same link color */
+            color: cyan;
             text-decoration: none;
         }
 
@@ -55,7 +59,7 @@
 
         ul {
             list-style-type: none;
-            padding-left: 20px; /* Consistent padding */
+            padding-left: 20px;
             margin: 20px 0;
         }
 
@@ -66,6 +70,16 @@
         footer {
             text-align: center;
             margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                width: 95%;
+            }
         }
     </style>
 </head>
