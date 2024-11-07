@@ -6,20 +6,20 @@
     <title>Haru Hoshizora</title>
     <link rel="icon" href="1477-samurai-18-pfpsgg.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#000000"> <!-- Chrome title bar color -->
+    <meta name="theme-color" content="#000000">
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: 'Raleway', sans-serif; /* Ensure Raleway is applied */
+            font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 100vh;
-            font-size: 18px; /* Same font size */
-            line-height: 1.6; /* Same line height */
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .content {
@@ -33,7 +33,7 @@
         }
 
         h2 {
-            margin-top: 30px; /* Consistent margins */
+            margin-top: 30px;
             margin-bottom: 10px;
         }
 
@@ -46,17 +46,17 @@
         }
 
         a {
-            color: cyan; /* Same link color */
+            color: cyan;
             text-decoration: none;
         }
 
         a:hover, a:active {
-            color: white; /* Link color when hovered or clicked */
+            color: white;
         }
 
         ul {
             list-style-type: none;
-            padding-left: 20px; /* Consistent padding */
+            padding-left: 20px;
             margin: 20px 0;
         }
 
@@ -69,42 +69,104 @@
             margin-top: 20px;
         }
 
-        h1 .mobile-line-break {
+        h1 .break-on-mobile {
             display: inline;
         }
 
         @media (max-width: 600px) {
-            h1 .mobile-line-break {
+            h1 .break-on-mobile {
                 display: block;
             }
+        }
+
+        .fade-out {
+            position: relative;
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .fade-out::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        }
+
+        .toggle-text-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            background-color: #d9d9d9;
+            border: none;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
+        .toggle-text-btn:hover {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>春星空は誰ですか<br>
-            Who is <span class="mobile-line-break">Haru Hoshizora?</span></h1>
-        <p>In the serene and mystical landscapes of ancient Japan, there lived a warrior unlike any other. Haru Hoshizora, known as the "Celestial Samurai," possessed an aura of grace and strength that captivated all who encountered him. Born under a sky filled with radiant stars, Haru's parents named him "Hoshizora," which means "starry sky," believing that he was destined for greatness.<br>
-            <br>From a young age, Haru displayed an extraordinary affinity for the way of the sword. His movements were fluid and precise, as if he was guided by the very stars that illuminated his birthplace. Under the tutelage of revered martial arts masters, Haru honed his skills, mastering not only the art of combat but also the wisdom and philosophy that came with it. His dedication and discipline earned him a reputation as an invincible warrior with a heart of gold.<br>
-            <br>Haru’s prowess was not limited to physical strength alone. He was known for his keen intellect and strategic mind. In battles, he could anticipate his opponents' moves and counter them with unparalleled finesse. However, it was his compassion and sense of justice that truly set him apart. Haru fought not for personal glory, but to protect the innocent and uphold peace. His deep empathy for those he defended made him a beloved figure among the people.<br>
-            <br>Despite his fearsome reputation on the battlefield, Haru remained humble and approachable. He often spent his evenings under the night sky, meditating and drawing inspiration from the stars. It was during these moments of reflection that he found clarity and purpose. Haru believed that every star had its own story, and like them, every person had a unique destiny. He encouraged those around him to seek their path with courage and conviction.<br>
-            <br>Haru Hoshizora’s legacy lived on through the generations, inspiring countless warriors and scholars. His life was a testament to the harmonious blend of strength, wisdom, and compassion. As the legend goes, on the night of his passing, the sky was illuminated with an extraordinary brilliance, as if the stars themselves were paying tribute to the Celestial Samurai who had walked among them.</p>
-    <div class="spacer"></div>
+            Who is <span class="break-on-mobile">Haru Hoshizora?</span></h1>
+        <p class="fade-out" id="bio-text">
+            In the serene and mystical landscapes of ancient Japan, there lived a warrior unlike any other. Haru Hoshizora, known as the "Celestial Samurai," possessed an aura of grace and strength that captivated all who encountered him. Born under a sky filled with radiant stars, Haru's parents named him "Hoshizora," which means "starry sky," believing that he was destined for greatness.<br><br>
+            From a young age, Haru displayed an extraordinary affinity for the way of the sword. His movements were fluid and precise, as if he was guided by the very stars that illuminated his birthplace. Under the tutelage of revered martial arts masters, Haru honed his skills, mastering not only the art of combat but also the wisdom and philosophy that came with it. His dedication and discipline earned him a reputation as an invincible warrior with a heart of gold.<br><br>
+            Haru’s prowess was not limited to physical strength alone. He was known for his keen intellect and strategic mind. In battles, he could anticipate his opponents' moves and counter them with unparalleled finesse. However, it was his compassion and sense of justice that truly set him apart. Haru fought not for personal glory, but to protect the innocent and uphold peace. His deep empathy for those he defended made him a beloved figure among the people.<br><br>
+            Despite his fearsome reputation on the battlefield, Haru remained humble and approachable. He often spent his evenings under the night sky, meditating and drawing inspiration from the stars. It was during these moments of reflection that he found clarity and purpose. Haru believed that every star had its own story, and like them, every person had a unique destiny. He encouraged those around him to seek their path with courage and conviction.<br><br>
+            Haru Hoshizora’s legacy lived on through the generations, inspiring countless warriors and scholars. His life was a testament to the harmonious blend of strength, wisdom, and compassion. As the legend goes, on the night of his passing, the sky was illuminated with an extraordinary brilliance, as if the stars themselves were paying tribute to the Celestial Samurai who had walked among them.
+        </p>
+        <button class="toggle-text-btn" id="toggle-btn">Read More</button>
 
-        <h2>Haru's Contact Links:</h2>
+        <div class="spacer"></div>
+
+        <h2>Haru's Projects:</h2>
+        <ul>
+            <li>N/A</li>
+        </ul>
+
+        <h2>Haru's Learnings:</h2>
+        <ul>
+            <li><a href="https://github.com/HaruHoshizora/Scientific-Computing-with-Python" target="_blank">Scientific Computing with Python (ongoing)</a></li>
+            <li>Calculus (revision pending)</li>
+            <li>Linear Algebra (revision ongoing)</li>
+            <li>Probability & Statistics (revision pending)</li>
+            <li>Geometry</li>
+            <li>Trigonometry</li>
+            <li>Algebra</li>
+            <li>Arithmetic</li>
+        </ul>
+
+        <h2>Follow Haru:</h2>
         <ul>
             <li><a href="https://github.com/HaruHoshizora" target="_blank">Github</a></li>
             <li><a href="https://x.com/HaruHoshizora" target="_blank">X</a></li>
         </ul>
-        
-        <div class="spacer"></div>
 
         <footer>
-            <p>&copy; <span id="year"></span> Haru Hoshizora (春星空)</p>
+            <p>&copy; <span id="current-year"></span> Haru Hoshizora (春星空)</p>
         </footer>
 
         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+
+            const bioText = document.getElementById('bio-text');
+            const toggleBtn = document.getElementById('toggle-btn');
+
+            toggleBtn.addEventListener('click', () => {
+                bioText.classList.toggle('fade-out');
+                toggleBtn.textContent = bioText.classList.contains('fade-out') ? 'Read More' : 'Read Less';
+            });
         </script>
     </div>
 </body>
